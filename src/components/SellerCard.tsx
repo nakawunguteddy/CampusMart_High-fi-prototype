@@ -1,0 +1,1 @@
+// Render avatar image, seller name, "Verified" icon when verified, location, and a Rate seller action
