@@ -12,11 +12,19 @@ export default function Profile() {
   }
 
   // debug label to identify which file was rendered
+<<<<<<< HEAD
   const debugLabel = 'Loaded from: project/src/pages/Profile.tsx';
 
   return (
     <div style={{maxWidth:720, margin:'24px auto'}}>
       {/* Debug label to confirm which file the app rendered */}
+=======
+  const debugLabel = 'Loaded from: src/pages/Profile.tsx';
+
+  return (
+    <div style={{maxWidth:720, margin:'24px auto'}}>
+      {/* debug label */}
+>>>>>>> 362b35682c9f0b210142ef2199fce0406d64762f
       <div style={{fontSize:12, color:'#064e3b', background:'#ecfdf5', padding:'6px 8px', borderRadius:6, marginBottom:12}}>
         {debugLabel}
       </div>
@@ -44,8 +52,13 @@ export default function Profile() {
               title="Verified user"
               style={{
                 position: 'absolute',
+<<<<<<< HEAD
                 right: 6,
                 bottom: 6,
+=======
+                right: 6,            // moved inside the avatar bounds
+                bottom: 6,           // moved inside the avatar bounds
+>>>>>>> 362b35682c9f0b210142ef2199fce0406d64762f
                 width: 30,
                 height: 30,
                 borderRadius: '50%',
@@ -72,7 +85,11 @@ export default function Profile() {
         <div>
           <div style={{display:'flex', alignItems:'center', gap:8}}>
             <h2 style={{margin:0}}>{name}</h2>
+<<<<<<< HEAD
             {/* verified student pill (green with icon) */}
+=======
+            {/* verified student pill (updated to green with icon) */}
+>>>>>>> 362b35682c9f0b210142ef2199fce0406d64762f
             {verified && (
               <span
                 aria-hidden={false}
@@ -112,6 +129,9 @@ export default function Profile() {
     </div>
   );
 }
+<<<<<<< HEAD
 
 // Verify the "Loaded from: project/src/pages/Profile.tsx" debug label is visible in the browser
 // If not, find duplicate Profile.tsx and replace the active copy
+=======
+>>>>>>> 362b35682c9f0b210142ef2199fce0406d64762f

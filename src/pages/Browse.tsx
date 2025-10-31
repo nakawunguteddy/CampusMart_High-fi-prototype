@@ -11,10 +11,24 @@ const sampleProducts = [
 
 const currency = new Intl.NumberFormat('en-UG', { style: 'currency', currency: 'UGX', maximumFractionDigits: 0 });
 
+<<<<<<< HEAD
 export default function Browse() {
   // products are rendered unconditionally so they appear for anonymous users as well
   return (
     <div style={{padding:20}}>
+=======
+// debug label to identify which file was rendered
+const debugLabel = 'Loaded from: src/pages/Browse.tsx';
+
+export default function Browse() {
+  return (
+    <div style={{padding:20}}>
+      {/* debug label */}
+      <div style={{fontSize:12, color:'#064e3b', background:'#ecfdf5', padding:'6px 8px', borderRadius:6, marginBottom:12}}>
+        {debugLabel}
+      </div>
+
+>>>>>>> 362b35682c9f0b210142ef2199fce0406d64762f
       <div style={{display:'flex', gap:12, marginBottom:16, flexWrap:'wrap'}}>
         {categories.map(c => (
           <button key={c} style={{padding:'8px 12px', borderRadius:6, border:'1px solid #ddd'}}>{c}</button>

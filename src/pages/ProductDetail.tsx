@@ -1,6 +1,19 @@
 import React from 'react';
+<<<<<<< HEAD
 
 export function ProductDetailsPage({ onBack, onOpenChat }: { onBack?: () => void; onOpenChat?: () => void }) {
+=======
+import SellerCard from '../components/SellerCard';
+import { useNavigate } from 'react-router-dom';
+
+export function ProductDetailsPage({ onBack, onOpenChat }: { onBack?: () => void; onOpenChat?: () => void }) {
+  const navigate = useNavigate();
+
+  function gotoChat() {
+    navigate('/chat');
+  }
+
+>>>>>>> 362b35682c9f0b210142ef2199fce0406d64762f
   return (
     <div className="p-8 max-w-7xl mx-auto">
       <button onClick={onBack} className="mb-6">
@@ -138,4 +151,8 @@ export function ProductDetailsPage({ onBack, onOpenChat }: { onBack?: () => void
   );
 }
 
+<<<<<<< HEAD
 export default ProductDetailsPage;
+=======
+export default ProductDetailsPage;
+>>>>>>> 362b35682c9f0b210142ef2199fce0406d64762f
